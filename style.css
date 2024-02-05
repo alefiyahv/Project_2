@@ -1,0 +1,277 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    min-height: 130vh;
+    background-image: url(images/back-image.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+/* Navigation bar */
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 160px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #c43d7a);
+    font-size: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+/* Content section */
+.content {
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.content h1 {
+    font-size: 60px;
+    color: #222;
+    text-align: left;
+}
+
+.content p {
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 0 40px;
+}
+
+/* Adjust button hover effect */
+.btn:hover {
+    border-top-right-radius: 30px;
+}
+
+/* Feature image */
+.feature-img {
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+/* Authentication links alignment */
+nav .auth-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ... additional styles ... */
+
+
+/* Additional styles for the button */
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 25px; /* Adjust for rounded corners */
+    background-image: linear-gradient(45deg, #df4881, #c43d7a); /* Gradient background */
+    font-size: 18px; /* Larger font size */
+    font-weight: bold; /* Bolder font */
+    margin-top: 20px; /* Spacing above the button */
+    cursor: pointer; /* Hand cursor on hover */
+}
+.signup-btn {
+    padding: 20px 60px; /* Even more padding for a larger button */
+    font-size: 20px; /* Larger font size for the sign-up button text */
+    /* You can also adjust the border-radius if you want to change the button's shape */
+    border-radius: 35px;
+    /* Add any other specific styles for the sign-up button here */
+}
+/* General Form Styles */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-group {
+    margin-bottom: 10px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button Styles */
+#search-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#search-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c43d7a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#search-form button:hover {
+    background-color: #df4881;
+}
+/* Styles for the Search Filters Section */
+#filters {
+    padding: 20px;
+    background: #f7f7f7; /* Light background for the filter section */
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+#filters fieldset {
+    border: 1px solid #ddd; /* subtle border for fieldsets */
+    padding: 10px;
+    margin-bottom: 20px; /* space between fieldsets */
+}
+
+#filters legend {
+    font-size: 18px; /* larger font size for legends */
+    color: #333; /* dark color for text */
+    margin-bottom: 10px; /* space below the legend */
+}
+
+#filters label {
+    display: block; /* each label in its own line */
+    margin-bottom: 5px; /* space below each label */
+}
+
+#filters input[type="checkbox"] {
+    margin-right: 10px; /* space to the right of each checkbox */
+}
+
+/* Styles for the Search Button */
+#filters button {
+    background-color: #4CAF50; /* green background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#filters button:hover {
+    background-color: #3e8e41; /* darker green on hover */
+}
+
+/* Styles for the Profile Results Section */
+#profileResults {
+    padding: 20px;
+    background: #fff; /* white background for results */
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px; /* space between profiles */
+}
+
+.profile h3 {
+    color: #333;
+    margin-bottom: 10px; /* space below profile name */
+}
+
+.profile p {
+    color: #666;
+    font-size: 14px; /* smaller font size for profile details */
+}

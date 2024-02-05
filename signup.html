@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Socially</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="signup-form" action="/submit-form-endpoint" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Values:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="values" value="kindness"> Kindness</label>
+                <label><input type="checkbox" name="values" value="honesty"> Honesty</label>
+                <label><input type="checkbox" name="values" value="selflessness"> Selflessness</label>
+                <label><input type="checkbox" name="values" value="confidence"> Confidence</label>
+            </div>
+            <input type="text" id="other-values" name="other_values" placeholder="Other values">
+        </div>
+        
+        <div class="form-group">
+            <label>Lifestyle:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="lifestyle" value="relaxed"> Relaxed</label>
+                <label><input type="checkbox" name="lifestyle" value="hiking"> Hiking</label>
+                <label><input type="checkbox" name="lifestyle" value="hardcore partying"> Hardcore Partying</label>
+            </div>
+            <input type="text" id="other-lifestyle" name="other_lifestyle" placeholder="Other lifestyle">
+        </div>
+        
+        <div class="form-group">
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies" value="art"> Art</label>
+                <label><input type="checkbox" name="hobbies" value="concerts"> Concerts</label>
+                <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+                <label><input type="checkbox" name="hobbies" value="video games"> Video Games</label>
+                <label><input type="checkbox" name="hobbies" value="nature"> Nature</label>
+                <label><input type="checkbox" name="hobbies" value="eating out"> Eating Out</label>
+                <label><input type="checkbox" name="hobbies" value="board games"> Board Games</label>
+            </div>
+            <input type="text" id="other-hobbies" name="other_hobbies" placeholder="Other hobbies">
+        </div>
+        
+        <div class="form-group">
+            <label for="photo">Profile Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+        
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Mock a server response
+            setTimeout(function() {
+                alert("Mock server response: Form submission successful!");
+
+                // Redirect to the home page after successful submission
+                window.location.href = 'index.html'; // Replace 'index.html' with the URL of your home page
+            }, 1000); // Simulate a delay of 1 second
+        }
+
+        // Attach the event listener to the form
+        window.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('signup-form').addEventListener('submit', handleFormSubmit);
+        });
+    </script>
+</body>
+</html>
+
+

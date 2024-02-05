@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Friends with Similar Interests</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Search for Friends</h1>
+    </header>
+
+    <section id="filters">
+        <form id="searchForm">
+            <fieldset>
+                <legend>Values</legend>
+                <label><input type="checkbox" name="values" value="kindness"> Kindness</label>
+                <label><input type="checkbox" name="values" value="honesty"> Honesty</label>
+                <label><input type="checkbox" name="values" value="self-confidence"> Self Confidence</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lifestyle</legend>
+                <label><input type="checkbox" name="lifestyle" value="relaxed"> Relaxed</label>
+                <label><input type="checkbox" name="lifestyle" value="hiking"> Hiking</label>
+                <label><input type="checkbox" name="lifestyle" value="partying"> Hardcore Partying</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hobbies</legend>
+                <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                <label><input type="checkbox" name="hobbies" value="art"> Art</label>
+                <!-- Add other hobbies here -->
+            </fieldset>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="profileResults">
+        <!-- User profiles will be displayed here -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
