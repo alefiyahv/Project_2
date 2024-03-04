@@ -1,0 +1,103 @@
+/* Base styles for the body */
+body {
+    background-image: url('images/back-image.png'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* No repeating of the background image */
+    background-position: center; /* Center the background image */
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    text-align: center; /* Center-align the header content */
+}
+
+header button {
+    background-color: #D81B60; /* Dark hot pink background color for the button */
+    color: white; /* White color for button text */
+    padding: 14px 28px; /* Slightly reduced padding */
+    border: none; /* No border */
+    border-radius: 18px; /* Slightly less rounded corners for the button */
+    cursor: pointer; /* Cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1.15em; /* Slightly smaller font size for the button text */
+}
+
+header button:hover {
+    background-color: #FF4081; /* Lighter hot pink on hover */
+}
+
+header h1 {
+    font-size: 4.5rem; /* Slightly smaller font size for the header */
+    color: white; /* White color for header text */
+    font-weight: 300;
+    margin: 0; /* Remove margin for the header */
+    padding: 9px 18px; /* Slightly reduced padding around header text */
+    border-radius: 9px; /* Slightly less rounded corners */
+}
+
+/* Form container styles */
+#searchForm {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the form */
+    border-radius: 9px; /* Slightly less rounded corners */
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow effect */
+    width: 90%;
+    max-width: 475px; /* Slightly reduced maximum width */
+    margin: 19px;
+    padding: 38px; /* Slightly reduced padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label styles for Values, Lifestyle, and Hobbies */
+#searchForm .form-group > label {
+    font-size: 1.8rem; /* Slightly smaller font size for labels */
+    margin-bottom: 9px; /* Slightly less space below the label */
+}
+
+/* Input styles */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 28px; /* Slightly reduced margin-bottom */
+    border: 1px solid #D81B60; /* Pink border color */
+    border-radius: 4.5px; /* Slightly less rounded corners */
+    box-shadow: inset 0 0.9px 2.7px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+    font-size: 1.4rem; /* Slightly smaller font size */
+}
+
+/* Focus styles for inputs */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus {
+    border-color: #FFB6C1; /* Light pink border color on focus */
+    box-shadow: inset 0 0.9px 2.7px rgba(0, 0, 0, 0.2); /* Slightly darker inner shadow on focus */
+}
+
+/* Button styles */
+button {
+    background-color: #D81B60;
+    color: white;
+    padding: 19px 38px; /* Slightly reduced padding */
+    border-radius: 28px; /* Slightly less rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.4rem; /* Slightly smaller font size */
+    margin-bottom: 0.9rem; /* Slightly reduced margin-bottom */
+}
+
+
+
+
